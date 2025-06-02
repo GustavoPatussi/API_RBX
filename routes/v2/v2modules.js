@@ -13,7 +13,7 @@ const bodyModules = {
         }
 }
 
-async function icmpPing(host, attempts = 30) {
+async function icmpPing(host, attempts = 100) {
     const times = [];
 
     for (let i = 0; i < attempts; i++) {
