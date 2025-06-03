@@ -7,7 +7,7 @@ const queryModule = (query) => {
 
 function bodyModule(campoRaiz, query) {
     const filtro = queryModule(query);
-    console.log(filtro);
+    // console.log(filtro);
     return {
         [campoRaiz]: {
             Autenticacao: {
@@ -17,9 +17,5 @@ function bodyModule(campoRaiz, query) {
         }
     };
 }
-
-
-
-
 
 module.exports = { bodyModule };
